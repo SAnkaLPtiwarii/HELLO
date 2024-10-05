@@ -1,12 +1,15 @@
 import React from 'react';
 import { ShoppingCart, Heart } from 'lucide-react';
-
+import Image from 'next/image';
 const ProductCard = ({ title, imageSrc, onAddToCart, onAddToFavorites }) => (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 flex flex-col">
         <div className="relative overflow-hidden">
-            <img
+            <Image
                 src={imageSrc}
                 alt={title}
+                width={500} // specify appropriate width
+                height={300} // specify appropriate height
+                layout="responsive"
                 className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
             />
             <button

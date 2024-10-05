@@ -105,7 +105,7 @@ const MobileApp = () => {
                 </div>
               ))
             ) : (
-              <p className="text-gray-600">You haven't added any favorites yet.</p>
+              <p className="text-gray-600">You haven&apos;t added any favorites yet.</p>
             )}
           </div>
         );
